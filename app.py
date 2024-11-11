@@ -12,7 +12,7 @@ def detect_objects(frame, cascade, color, object_name, counters):
     counters[object_name] += len(objects)
 
 def main():
-    cap = cv2.VideoCapture('Video.mp4')
+    cap = cv2.VideoCapture('video.mp4')
     
     car_cascade = cv2.CascadeClassifier('cars.xml')
     bikes_cascade = cv2.CascadeClassifier('bikes.xml')
